@@ -1,0 +1,12 @@
+This is a placeholder file.
+
+To use the music player:
+1. Replace this file with real track1.mp3, track2.mp3, etc.
+2. You can download free music from:
+   - https://freemusicarchive.org/
+   - https://www.bensound.com/
+   - https://incompetech.com/
+
+Or use online URLs in the HTML data-track attributes.
+
+The app is ready to play real MP3 files as soon as you add them!

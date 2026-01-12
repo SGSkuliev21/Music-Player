@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibestream - Your Personal Music Universe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-music"></i>
+            </div>
+            <span class="logo-text">Vibestream</span>
+        </div>
+        
+        <div class="nav-section">
+            <h3 class="nav-title">MENU</h3>
+            <a href="#" class="nav-link active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-compass"></i>
+                <span>Discover</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-radio"></i>
+                <span>Radio</span>
+            </a>
+        </div>
+        
+        <div class="nav-section">
+            <h3 class="nav-title">LIBRARY</h3>
+            <a href="#" class="nav-link">
+                <i class="fas fa-heart"></i>
+                <span>Liked Songs</span>
+                <span class="badge">142</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-list"></i>
+                <span>Playlists</span>
+                <span class="badge">24</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-compact-disc"></i>
+                <span>Albums</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-microphone"></i>
+                <span>Artists</span>
+            </a>
+        </div>
+        
+        <div class="user-profile">
+            <img src="https://i.pravatar.cc/150?img=68" alt="User Avatar" class="avatar">
+            <div class="user-info">
+                <div class="user-name">Alex Rivers</div>
+                <div class="user-plan">Premium User</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Welcome Banner -->
+        <div class="welcome-banner">
+            <div class="welcome-content">
+                <h1 class="greeting">Good evening, Alex! 👋</h1>
+                <p class="tagline">Ready to discover your next favorite song?</p>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-headphones"></i>
+                    <div>
+                        <div class="stat-value">2,847</div>
+                        <div class="stat-label">Hours Listened</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-fire"></i>
+                    <div>
+                        <div class="stat-value">38</div>
+                        <div class="stat-label">Day Streak</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Playlist -->
+        <section class="featured-section">
+            <div class="section-header">
+                <h2>🔥 Trending Now</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="playlist-hero">
+                <div class="hero-artwork">
+                    <div class="artwork-gradient"></div>
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&h=400&fit=crop" alt="Playlist Cover">
+                    <button class="hero-play-btn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="hero-info">
+                    <div class="playlist-badge">PLAYLIST</div>
+                    <h1 class="hero-title">My Favorites 2026</h1>
+                    <p class="hero-description">The hottest tracks featuring Garjoka, Medi, Luis Fonsi and more. Curated especially for you based on your listening habits.</p>
+                    <div class="hero-meta">
+                        <img src="https://i.pravatar.cc/40?img=68" alt="Curator" class="curator-avatar">
+                        <span class="curator-name">Alex Rivers</span>
+                        <span class="separator">•</span>
+                        <span class="song-count">7 songs</span>
+                        <span class="separator">•</span>
+                        <span class="duration">25 min</span>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn-play-hero">
+                            <i class="fas fa-play"></i> Play Now
+                        </button>
+                        <button class="btn-like">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="btn-share">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Tracks -->
+        <section class="tracks-section">
+            <div class="section-header">
+                <h2>🎵 Popular Right Now</h2>
+                <div class="filter-tabs">
+                    <button class="tab active">All</button>
+                    <button class="tab">Pop</button>
+                    <button class="tab">Rock</button>
+                    <button class="tab">Electronic</button>
+                </div>
+            </div>
+            
+            <div class="tracks-table">
+                <div class="table-header">
+                    <div class="col-number">#</div>
+                    <div class="col-title">TITLE</div>
+                    <div class="col-album">ALBUM</div>
+                    <div class="col-date">DATE ADDED</div>
+                    <div class="col-duration"><i class="far fa-clock"></i></div>
+                </div>
+                
+                <div class="track-item" data-track="music/LaFamilia.mp3" data-duration="200">
+                    <div class="col-number">
+                        <span class="track-number">1</span>
+                        <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="col-title">
+                        <img src="https://f4.bcbits.com/img/a0784929207_10.jpg" alt="Track" class="track-thumbnail">
+                        <div class="track-info">
+                            <div class="track-name">La Familia</div>
+                            <div class="track-artist">Garjoka</div>
+                        </div>
+                    </div>
+                    <div class="col-album">Brat ZA Brata</div>
+                    <div class="col-date">5 days ago</div>
+                    <div class="col-duration">
+                        <button class="btn-like-small"><i class="far fa-heart"></i></button>
+                        <span class="duration">3:20</span>
+                        <button class="btn-menu-small"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <div class="track-item" data-track="music/Zarqzan.mp3" data-duration="203">
+                    <div class="col-number">
+                        <span class="track-number">2</span>
+                        <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="col-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2734bfa4adad670de524773f007" alt="Track" class="track-thumbnail">
+                        <div class="track-info">
+                            <div class="track-name">Zarqzan</div>
+                            <div class="track-artist">Medi</div>
+                        </div>
+                    </div>
+                    <div class="col-album">Single</div>
+                    <div class="col-date">1 week ago</div>
+                    <div class="col-duration">
+                        <button class="btn-like-small"><i class="fas fa-heart"></i></button>
+                        <span class="duration">3:23</span>
+                        <button class="btn-menu-small"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <div class="track-item" data-track="music/Despacito.mp3" data-duration="229">
+                    <div class="col-number">
+                        <span class="track-number">3</span>
+                        <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="col-title">
+                        <img src="https://f4.bcbits.com/img/a1055206585_16.jpg" alt="Track" class="track-thumbnail">
+                        <div class="track-info">
+                            <div class="track-name">Despacito</div>
+                            <div class="track-artist">Luis Fonsi</div>
+                        </div>
+                    </div>
+                    <div class="col-album">Vida</div>
+                    <div class="col-date">2 weeks ago</div>
+                    <div class="col-duration">
+                        <button class="btn-like-small"><i class="far fa-heart"></i></button>
+                        <span class="duration">3:49</span>
+                        <button class="btn-menu-small"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <div class="track-item" data-track="music/Life.mp3" data-duration="167">
+                    <div class="col-number">
+                        <span class="track-number">4</span>
+                        <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="col-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2732002e871c67851390c916cfa" alt="Track" class="track-thumbnail">
+                        <div class="track-info">
+                            <div class="track-name">Life</div>
+                            <div class="track-artist">Zivert</div>
+                        </div>
+                    </div>
+                    <div class="col-album">Single</div>
+                    <div class="col-date">3 weeks ago</div>
+                    <div class="col-duration">
+                        <button class="btn-like-small"><i class="far fa-heart"></i></button>
+                        <span class="duration">2:47</span>
+                        <button class="btn-menu-small"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <div class="track-item" data-track="music/HeatWaves.mp3" data-duration="238">
+                    <div class="col-number">
+                        <span class="track-number">5</span>
+                        <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="col-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273ab9d1ae18b640b7b0ce390d4" alt="Track" class="track-thumbnail">
+                        <div class="track-info">
+                            <div class="track-name">Heat Waves</div>
+                            <div class="track-artist">Glass Animals</div>
+                        </div>
+                    </div>
+                    <div class="col-album">Dreamland</div>
+                    <div class="col-date">1 month ago</div>
+                    <div class="col-duration">
+                        <button class="btn-like-small"><i class="fas fa-heart"></i></button>
+                        <span class="duration">3:58</span>
+                        <button class="btn-menu-small"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <div class="track-item" data-track="music/track6.mp3" data-duration="141">
+                    <div class="col-number">
+                        <span class="track-number">6</span>
+                        <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="col-title">
+                        <img src="https://picsum.photos/seed/track6/50/50" alt="Track" class="track-thumbnail">
+                        <div class="track-info">
+                            <div class="track-name">Stay</div>
+                            <div class="track-artist">The Kid LAROI, Justin Bieber</div>
+                        </div>
+                    </div>
+                    <div class="col-album">F*CK LOVE 3</div>
+                    <div class="col-date">1 month ago</div>
+                    <div class="col-duration">
+                        <button class="btn-like-small"><i class="far fa-heart"></i></button>
+                        <span class="duration">2:21</span>
+                        <button class="btn-menu-small"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <div class="track-item" data-track="music/track7.mp3" data-duration="230">
+                    <div class="col-number">
+                        <span class="track-number">7</span>
+                        <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="col-title">
+                        <img src="https://picsum.photos/seed/track7/50/50" alt="Track" class="track-thumbnail">
+                        <div class="track-info">
+                            <div class="track-name">Starboy</div>
+                            <div class="track-artist">The Weeknd ft. Daft Punk</div>
+                        </div>
+                    </div>
+                    <div class="col-album">Starboy</div>
+                    <div class="col-date">2 months ago</div>
+                    <div class="col-duration">
+                        <button class="btn-like-small"><i class="far fa-heart"></i></button>
+                        <span class="duration">3:50</span>
+                        <button class="btn-menu-small"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Player -->
+    <footer class="player">
+        <div class="player-wrapper">
+            <!-- Now Playing -->
+            <div class="now-playing">
+                <img src="https://f4.bcbits.com/img/a0784929207_10.jpg" alt="Now Playing" class="player-artwork">
+                <div class="now-playing-info">
+                    <div class="player-track-name">La Familia</div>
+                    <div class="player-artist-name">Garjoka</div>
+                </div>
+                <button class="btn-player-like">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+
+            <!-- Center Controls -->
+            <div class="player-center">
+                <div class="player-controls">
+                    <button class="control-btn btn-shuffle">
+                        <i class="fas fa-random"></i>
+                    </button>
+                    <button class="control-btn btn-previous">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button class="control-btn btn-play-main">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="control-btn btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                    <button class="control-btn btn-repeat">
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+                
+                <div class="progress-container">
+                    <span class="time-current">0:00</span>
+                    <div class="progress-bar">
+                        <div class="progress-filled" style="width: 0%;"></div>
+                        <div class="progress-handle"></div>
+                    </div>
+                    <span class="time-total">0:00</span>
+                </div>
+            </div>
+
+            <!-- Right Controls -->
+            <div class="player-right">
+                <button class="control-btn btn-queue">
+                    <i class="fas fa-list"></i>
+                </button>
+                <button class="control-btn btn-devices">
+                    <i class="fas fa-desktop"></i>
+                </button>
+                <div class="volume-control">
+                    <button class="control-btn btn-volume">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <div class="volume-bar">
+                        <div class="volume-filled" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <button class="control-btn btn-fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio Player Element (Hidden) -->
+    <audio id="audioPlayer" preload="metadata"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
